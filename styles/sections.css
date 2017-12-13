@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Josefin Slab' !important;
+  font-size: 17px !important;
+}
+
+  h1, h2, h3 {
+    font-family: 'Raleway' !important;
+  }
+
+.section-top-wrap {
+  background: url('/media/peak.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .section-top-wrap::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+  }
+
+  .section-top-wrap .section-header {
+    font-size: 72px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    position: absolute;
+  }
+
+  .section-top-wrap .back-home {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 22px;
+  }
+
+.subsection-wrap {
+  background: url('/media/hiking.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+  .subsection-wrap::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    background-position: 100px 100px;
+  }
+
+  .subsection-wrap .subsection {
+    min-height: 50vh;
+    clear: both;
+    width: auto !important;
+    margin-bottom: 50px;
+  }
+
+    .subsection .subsection-header {
+      text-align: center;
+      margin-top: 0;
+      padding-top: 20px;
+      position: relative;
+    }
+
+    .subsection.one-item, .subsection.two-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+      .subsection.one-item .subsection-single-item, .subsection.two-items .subsection-single-item {
+        width: 50%;
+        min-width: 500px;
+        max-width: 600px;
+        margin: 0 20px;
+      }
+
+      .subsection.two-items .two-items-wrap {
+        display: flex;
+      }
+
+    .clear {
+      clear: both;
+    }
